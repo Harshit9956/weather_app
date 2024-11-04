@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Weather Prediction Input Form</h2>
+        <form action="/predict" method="POST">
+            <div class="form-group">
+                <label for="temp">Temperature (°C):</label>
+                <input type="number" step="0.1" id="temp" name="temp" required>
+            </div>
+            <div class="form-group">
+                <label for="dew_point">Dew Point Temperature (°C):</label>
+                <input type="number" step="0.1" id="dew_point" name="dew_point" required>
+            </div>
+            <div class="form-group">
+                <label for="rel_hum">Relative Humidity (%):</label>
+                <input type="number" step="0.1" id="rel_hum" name="rel_hum" required>
+            </div>
+            <div class="form-group">
+                <label for="wind_spd">Wind Speed (km/h):</label>
+                <input type="number" step="0.1" id="wind_spd" name="wind_spd" required>
+            </div>
+            <div class="form-group">
+                <label for="visibility">Visibility (km):</label>
+                <input type="number" step="0.1" id="visibility" name="visibility" required>
+            </div>
+            <div class="form-group">
+                <label for="stn_press">Station Pressure (kPa):</label>
+                <input type="number" step="0.1" id="stn_press" name="stn_press" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
