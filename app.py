@@ -2,7 +2,7 @@ from flask import Flask,render_template
 # import requests
 
 # city_name = 'Pune'
-# API_key='3bffd425426cabd79428a7cddc2eaa4f'
+# API_key=
 # url = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_key}&units=metric'
 
 # response= requests.get(url)
