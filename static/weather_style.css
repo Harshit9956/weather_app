@@ -1,0 +1,109 @@
+body { 
+    font-family: Arial, sans-serif;
+    background-image: url("wthrbg.jpg");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+header {
+    background-color: #000;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+nav {
+    background-color: #c49ba1;
+    padding: 10px 0px;
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin: 10px 0px;
+}
+
+nav ul li {
+    margin: 0 10px;
+    font-size: 20px;
+    font: bold;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+
+
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.weather-info {
+    text-align: left;
+}
+
+.error {
+    color: red;
+}
+
+.back-btn {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+.back-btn:hover{
+    color: #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #bbe6db;
+    color: rgb(58, 54, 54);
+    margin-top: 220px;
+    
+}

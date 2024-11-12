@@ -1,55 +1,101 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #f0f4f8;
+    background-image: url('bg.jpg');
+    
+    
+}
+
+header {
+    background-color: #61727a;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+nav {
+    background-color: #0073e6;
+    padding: 10px 0px;
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin: 10px 0px;
+}
+
+nav ul li {
+    margin: 0 10px;
+    font-size: 20px;
+    font: bold;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
 .container {
-    background-color: #ffffff;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 150px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
 }
 
+.left-panel, .right-panel {
+    flex: 1;
+    padding: 20px;
+       
+    background-color: hsla(0, 0%, 0%, 0.5);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(26, 18, 18, 0.1);
+    width: 50px ;
+}
+
+.left-panel {
+    margin-right: 10px;
+    color: #f0f4f8;
+}
+
+
+.right-panel {
+    margin-left: 10px;
+    color: #f0f4f8;
+
+}
+.left-panel h3{
+    margin: auto;
+    text-align: center;
+}
 h2 {
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 40px;
+    color: #babdbe;
+    margin: auto;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.right-panel p{
+    padding: auto;
+    margin: auto;
+    text-align: center;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input {
-    width: calc(100% - 20px);
-    padding: 8px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    width: 100%;
+footer {
+    text-align: center;
     padding: 10px;
-    border: none;
-    background-color: #007bff;
+    background-color: #0077b6;
     color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
 }

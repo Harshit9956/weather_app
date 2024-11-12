@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        
+        <h1>Weather App</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Split -->
+    <div class="container">
+        
+        <!-- Live Weather Section -->
+        <div class="left-panel">
+            <a href="/weather">
+            <h2> Weather Report</h2>
+            </a>
+            <h3>Mumbai</h3><br>
+            <p>Temperature: {{data.temp}}°C</p>
+            <p>Humidity: {{data.humidity}}</p>
+            <p>Wind Speed: {{data.wind}}km/h</p>
+            
+            <!-- You can dynamically render these details using Flask if needed -->
+        </div>
+
+        <!-- Weather Prediction Section -->
+        <div class="right-panel">
+            <a href="/form">
+            <h2>Weather Prediction</h2>
+        </a>
+            <div class="forecast">
+               <p><br>
+                Predict the weather condition<br>
+                based on the factors
+               </p>
+                <!-- Add more forecast days here -->
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Weather  Prediction App. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

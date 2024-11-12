@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='weather_style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Weather Information</h1>
+    </header>
+    <div class="container">
+        <div class="weather-info">
+            <h2>Weather in {{ weather.city }}</h2>
+            <p><strong>Temperature:</strong> {{ weather.temperature }}°C</p>
+            <p><strong>Feels Like:</strong> {{ weather.feels_like }}°C</p>
+            <p><strong> Min Temp:</strong> {{ weather.temp_min }}°C</p>
+            <p><strong>Max Temp:</strong> {{ weather.temp_max }}°C</p>
+            <p><strong>Humidity:</strong> {{ weather.humidity }}%</p>
+            <p><strong>Wind Speed:</strong> {{ weather.wind_speed }} km/h</p>
+            <p><strong>Description:</strong> {{ weather.description }}</p>
+            <p><strong>Clouds: </strong>{{ weather.clouds_all}}%</p>
+
+        </div>
+        <a href="/weather" class="back-btn">Check Another City</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact_style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay">
+            <h1>Contact Me</h1>
+            <p>Have questions? I have answers.</p>
+        </div>
+    </section>
+    
+    
+    <section class="contact-form">
+        <h2>Want to get in touch?</h2>
+        <p>Fill out the form below to send me a message.</p>
+        <form action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    
+    <div class="social-links">
+        <a href="https://github.com/Harshit9956" target="_blank" class="social-link github">
+            <img src="{{url_for('static',filename='git.png')}}" alt="GitHub" class="icon"> GitHub
+        </a>
+        
+        <a href="https://instagram.com/harshittt146" target="_blank" class="social-link instagram">
+            <img src="{{url_for('static',filename='insta.jpeg')}}" alt="Instagram" class="icon"> Instagram
+        </a>
+        
+        <a href="https://www.linkedin.com/in/harshit-mishra-b75535260/" target="_blank" class="social-link linkedin">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn" class="icon"> LinkedIn
+        </a>
+        
+       
+    </div>
+
+    <footer>
+        <p>© 2024 Weather Prediction App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

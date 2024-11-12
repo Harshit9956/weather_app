@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+<header></header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    <div class="container">
+        <h1>Enter Weather Details</h1>
+        <form action="/predict" method="POST">
+            <label for="temp">Temp (C):</label>
+            <input type="text" id="temp" name="Temp (C)" required><br>
+
+            <label for="dew_point_temp">Dew Point(C):</label>
+            <input type="text" id="dew_point_temp" name="Dew Point Temp (C)" required><br>
+
+            <label for="rel_hum">Humidity:</label>
+            <input type="text" id="rel_hum" name="Rel Hum (%)" required><br>
+
+            <label for="wind_spd">Wind Speed (km/h):</label>
+            <input type="text" id="wind_spd" name="Wind Spd (km/h)" required><br>
+
+            <label for="visibility">Visibility (km):</label>
+            <input type="text" id="visibility" name="Visibility (km)" required><br>
+
+            <label for="stn_press">Station Pressure (kPa):</label>
+            <input type="text" id="stn_press" name="Stn Press (kPa)" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <p>© 2024 Weather Prediction App. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

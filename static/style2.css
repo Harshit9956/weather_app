@@ -1,83 +1,94 @@
-/* General Reset */
+/* Reset default margins and paddings */
+
+body{
+    background-image: url("formbg.jpg");
+}
+
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
+    box-sizing:content-box;
     font-family: Arial, sans-serif;
-    color: #333;
-    background: url('bg.jpg')
 }
 
-/* Header Section */
-header {
+/* Styling for the navigation bar */
+nav {
+    background-color: #d6a211;
+    padding: 10px 0px;
+   
+}
+
+nav ul {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background-color: #4a90e2;
-    color: #fff;
+    justify-content: right;
 }
 
-header .logo {
-    font-size: 1.5em;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
 }
 
-header nav {
-    display: flex;
-    gap: 20px;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
+/* Container styling */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
 }
 
-header nav .btn {
-    padding: 10px 20px;
-    background-color: #006bb3;
-    border-radius: 5px;
-}
-
-header nav .btn:hover {
-    background-color: #005699;
-}
-
-/* Hero Section */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    background: url('https://example.com/weather-background.jpg') no-repeat center center/cover;
-    color: #fff;
+/* Header styling */
+.container h1 {
     text-align: center;
-    padding: 0 10%;
+    margin-bottom: 20px;
 }
 
-.hero-content h1 {
-    font-size: 2.5em;
+/* Form input styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
     margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.cta-btn {
-    padding: 15px 30px;
-    background-color: #ff9933;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1em;
-    text-decoration: none;
+input[type="submit"]:hover {
+    background-color: #005bb5;
 }
-
-.cta-btn:hover {
-    background-color: #e6801a;
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #bbe6db;
+    color: rgb(58, 54, 54);
 }
