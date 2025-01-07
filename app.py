@@ -14,7 +14,7 @@ app = Flask(__name__)
 def home():
     try:
         city_name = 'Mumbai'
-        API_key=''
+        API_key=api_key
         url = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_key}&units=metric'
 
         response= requests.get(url)
@@ -69,7 +69,7 @@ def index():
 def weather():
     city = request.form['city']
     
-    API_KEY=''
+    API_KEY=api_key
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
     response = requests.get(url)
     data = response.json()
